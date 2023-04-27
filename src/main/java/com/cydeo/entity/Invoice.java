@@ -5,8 +5,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import org.hibernate.annotations.Where;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
+import javax.persistence.*;
 import java.time.LocalDate;
 
 @Getter
@@ -17,12 +16,12 @@ import java.time.LocalDate;
 public class Invoice extends BaseEntity{
 
     @Column(columnDefinition = "DATE")
-    LocalDate invoiceDate;
-    Integer invoiceNumber;
-    String invoiceType;
+    private LocalDate invoiceDate;
+    private String invoiceNumber;
+    private String invoiceType;
 
-    //    @ManyToOne(fetch = FetchType.LAZY)
-//    @JoinColumn(name = "client_id")
-//    private Client client;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "client_id")
+    private Client client;
 
 }

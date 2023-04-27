@@ -13,11 +13,14 @@ import javax.persistence.*;
 @Entity
 @Table(name = "users")
 public class User extends BaseEntity {
-    private String userName;
+
+    private String email;
     private String firstName;
     private String lastName;
-    private String passWord;
-//    private Role role;
+    private String password;
+
+    @ManyToOne
+    private Role role;
 
 
 
