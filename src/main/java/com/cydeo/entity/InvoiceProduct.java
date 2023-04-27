@@ -1,6 +1,6 @@
 package com.cydeo.entity;
 
-import entity.BaseEntity;
+
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -21,6 +21,6 @@ public class InvoiceProduct extends BaseEntity {
 //
 //    @ManyToOne(fetch = FetchType.LAZY)
 //    @JoinColumn(name = "product_id")
-//    private Product product;
+//    private Product;
 
 }
