@@ -1,5 +1,6 @@
-package entity;
+package com.cydeo.entity;
 
+import entity.BaseEntity;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
