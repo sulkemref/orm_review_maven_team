@@ -11,12 +11,13 @@ import javax.persistence.*;
 @Setter
 @NoArgsConstructor
 @Entity
-@Table(name = "user")
+@Table(name = "users")
 public class User extends BaseEntity {
     private String userName;
     private String firstName;
     private String lastName;
     private String passWord;
+//    private Role role;
 
 
 
